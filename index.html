@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Hand gesture web app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+     
+   
+    
+      
+      <p style="font-size: 22px;">Take your selfie of a geture
+      </p>
+        <label>
+          These are the hand gestures the model is trained in-
+          
+        </label>
+        <span>&#9996;-victory</span>
+       <span>&#128076;-amazing</span>
+       <span>&#128077;-best</span>
+
+     
+      	<br>
+        
+      
+      
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label >Webcam view</label>
+        <div id = "camera">
+          <br>
+          
+
+        </div>
+	      <button onclick="takesnapshot()" class="btn btn-warning">Capture Image</button>
+
+        <br><br>
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12"> 
+        <label >Prediction :</label>
+        <label id="result_gesture"></label>
+  
+        
+      </div>
+
+   
+
+  </div>
+  <div class="col-md-4 col-sm-12 col-xs-12"> 
+    <label>Snapshot - </label>
+    <div id="result"></div>
+    <br>
+    <button class = "btn btn-success" onclick="check()">Predict Emotion</button>
+    </div>
+</center>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
